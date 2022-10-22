@@ -1,9 +1,9 @@
 const Moralis = require("moralis/node");
 const convertToUsd = require("./convertCurrency");
 
-const serverUrl = process.env.SERVER_URL || "https://ohnzvcntkgvv.usemoralis.com:2053/server";
-const appId = process.env.APP_ID || "DUGETJeIPnf99Q7wiKDjwvejuN75FNYVy1NPk0hX";
-const masterKey = process.env.MASTER_KEY || "MK7c0460urcbo6gkEPVsaJPVnUYkt9Xpf04dr6vO";
+const serverUrl = process.env.SERVER_URL;
+const appId = process.env.APP_ID;
+const masterKey = process.env.MASTER_KEY;
 
 async function getWalletDetails(walletAddress) {
     await Moralis.start({ serverUrl, appId, masterKey });  // starting moralis server
