@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const apiKey = "dcd24c93ae2ecfdc3498a53b1e564987063361122406a9e0006587ea4fe9a518";
+const apiKey = "secret";
 
 async function covertToUsd(eth_balance) {
     const config = {
